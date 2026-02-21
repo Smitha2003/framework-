@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>framework() - Personality-Based Task Manager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">framework()</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#brain">Brain Types</a>
+      <a href="#faqs">FAQs</a>
+      <a href="#contact">Contact</a>
+      <a href="login.html" class="login-btn">Login</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <canvas id="canvas-hero"></canvas>
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Reimagine how you work.</h1>
+      <p>A focus optimization system tailored to your cognitive style.</p>
+      <button class="cta-btn" onclick="navigateTo('quiz.html')">Take the Quiz</button>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="section">
+    <h2 data-aos="fade-up">Built for Cognitive Alignment</h2>
+
+    <div class="cards">
+      <div class="card" data-aos="fade-up">
+        <div class="card-icon">&#129504</div>
+        <h3>Personality-Based Dashboards</h3>
+        <p>Five cognitive systems adapted to your unique thinking style.</p>
+      </div>
+
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-icon">⚡</div>
+        <h3>Focus Optimization</h3>
+        <p>Turn chaos into clarity through adaptive interfaces.</p>
+      </div>
+
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-icon">&#128202</div>
+        <h3>Actionable Analytics</h3>
+        <p>Understand how your attention evolves over time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAIN TYPES -->
+  <section id="brain" class="section dark">
+    <h2 data-aos="fade-up">Five Focus Systems</h2>
+    <div class="brain-types" data-aos="fade-up" data-aos-delay="100">
+      <div class="brain-type">
+        <div class="brain-icon">&#x1F3D7</div>
+        <h4>Architect</h4>
+        <p>Structured, systematic, detailed planners</p>
+      </div>
+      <div class="brain-type">
+        <div class="brain-icon">&#x1F3C3</div>
+        <h4>Sprinter</h4>
+        <p>Fast-paced, deadline-driven achievers</p>
+      </div>
+      <div class="brain-type">
+        <div class="brain-icon">&#128173</div>
+        <h4>Dreamer</h4>
+        <p>Creative, visionary, big-picture thinkers</p>
+      </div>
+      <div class="brain-type">
+        <div class="brain-icon">&#129337</div>
+        <h4>Juggler</h4>
+        <p>Multitaskers, adaptive, context-switchers</p>
+      </div>
+      <div class="brain-type">
+        <div class="brain-icon">&#127919</div>
+        <h4>Minimalist</h4>
+        <p>Simplicity-focused, essential-only thinkers</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="cta-section">
+    <h2 data-aos="fade-up">Find Your Focus Framework.</h2>
+    <p data-aos="fade-up" data-aos-delay="50">Take the quiz and discover your cognitive style</p>
+    <button class="cta-btn large" data-aos="fade-up" data-aos-delay="100" onclick="navigateTo('quiz.html')">
+      Take the Quiz & Find Out Your Brain Type
+    </button>
+  </section>
+
+  <!-- FAQs -->
+  <section id="faqs" class="section faqs-section">
+    <h2 data-aos="fade-up">Frequently Asked Questions</h2>
+    <div class="faq-container" data-aos="fade-up" data-aos-delay="100">
+      <div class="faq-item">
+        <button class="faq-toggle">
+          <span>What makes framework() different?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p>Unlike generic task managers, framework() adapts to your cognitive style. We believe productivity fails not from lack of tools, but from using tools that don't match how you actually think.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-toggle">
+          <span>How does the brain type quiz work?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p>Our quiz analyzes your cognitive preferences across multiple dimensions: structure, pace, thinking style, and approach. Within minutes, you'll discover which of our five brain types matches your natural workflow.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-toggle">
+          <span>Can I change my brain type later?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p>Yes! Your brain type isn't fixed. You can retake the quiz anytime to refresh your results, and your dashboard will adapt accordingly.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-toggle">
+          <span>Is my data private?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p>Your data is yours. We believe in privacy by design. Your tasks, preferences, and analytics stay on your device.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-toggle">
+          <span>What if none of the brain types feel right?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-content">
+          <p>Most people are a blend of types. Our system shows you your primary and secondary types, so you get a nuanced view of your cognitive style.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <h2 data-aos="fade-up">Get In Touch</h2>
+    <div class="contact-content" data-aos="fade-up" data-aos-delay="100">
+      <div class="contact-info">
+        <h4>Have Questions?</h4>
+        <p>Email us at <a href="mailto:hello@framework.app">hello@framework.app</a></p>
+        <p>We'd love to hear your thoughts on productivity and cognitive alignment.</p>
+      </div>
+      <div class="contact-info">
+        <h4>Join Our Community</h4>
+        <p>Follow for updates, tips, and new brain type insights.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">Twitter</a>
+          <a href="#" class="social-link">LinkedIn</a>
+          <a href="#" class="social-link">Discord</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h5>framework()</h5>
+        <p>Personality-based task management system</p>
+      </div>
+      <div class="footer-section">
+        <h5>Product</h5>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#brain">Brain Types</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 framework(). All rights reserved. Designed with cognitive alignment in mind.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/core/router.js"></script>
+  <script src="js/landing.js"></script>
+
+</body>
+</html>

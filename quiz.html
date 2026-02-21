@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find Your Brain Type - framework()</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="quiz-header">
+    <div class="logo" onclick="window.location.href='index.html'">framework()</div>
+    <div class="progress-bar">
+      <div id="progress" class="progress-fill"></div>
+    </div>
+  </header>
+
+  <!-- QUIZ CONTAINER -->
+  <div class="quiz-container">
+    <div class="quiz-wrapper">
+      <!-- Question Section -->
+      <div id="quiz-section" class="quiz-section">
+        <div class="question-counter">
+          <span id="current-question">1</span> / <span id="total-questions">10</span>
+        </div>
+        <h2 id="question-text" class="question-text"></h2>
+        <div id="answers-container" class="answers-container"></div>
+        <div class="quiz-navigation">
+          <button id="prev-btn" class="nav-btn" onclick="previousQuestion()">← Previous</button>
+          <button id="next-btn" class="nav-btn" onclick="nextQuestion()">Next →</button>
+        </div>
+      </div>
+
+      <!-- Results Section -->
+      <div id="results-section" class="results-section hidden">
+        <h2>Finding your brain type...</h2>
+        <div class="loading-spinner">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/auth/auth.js"></script>
+  <script src="js/quiz/quizLogic.js"></script>
+  <script src="js/quiz/quizUI.js"></script>
+
+</body>
+</html>
